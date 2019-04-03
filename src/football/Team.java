@@ -27,7 +27,7 @@ public class Team {
 	}
 	
 	/**
-	 * 
+	 * Store the squad in an Array List and save it to a file
 	 * @param squad
 	 */
 	public void storeSquad(ArrayList<Player> squad) {
@@ -35,7 +35,7 @@ public class Team {
 	}
 	
 	/**
-	 * 
+	 * Load the player's squad from a file
 	 * @return
 	 */
 	public ArrayList<Player> loadSquad() {		

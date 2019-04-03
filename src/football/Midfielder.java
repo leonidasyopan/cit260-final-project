@@ -36,5 +36,4 @@ public class Midfielder extends Player {
 		
 		return true;
 	}
-
 }

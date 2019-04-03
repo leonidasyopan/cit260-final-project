@@ -51,24 +51,47 @@ public abstract class Player {
 	}
 	
 	/**
-	 * @return the name
+	 * @return the Player's name
 	 */
 	public String getName() {
 		return name;
 	}
+
+	/**
+	 * Set the Player's name
+	 * @param name
+	 */
+	
+    public void setName(String name) {
+        this.name = name;
+    }
 	
 	/**
-	 * @return the country
+	 * @return the Player's country
 	 */
 	public String getCountry() {
 		return country;
 	}
 	
 	/**
-	 * @return the number
+     * Set the Player's country
+     */
+    public void setCountry(String country) {
+        this.country = country;
+    }
+	
+	/**
+	 * @return the Player's number
 	 */
 	public int getNumber() {
 		return number;
 	}	
+	
+	/**
+     * Set the Player's number
+     */
+    public void setNumber(int number) {
+        this.number = number;
+    }
 
 }
