@@ -2,6 +2,8 @@ package football;
 
 /**
  * Base class of all players in our program.
+ * Here we are going to load and store all the data for all 
+ * the team squad
  */
 public abstract class Player {
 	
@@ -94,4 +96,11 @@ public abstract class Player {
         this.number = number;
     }
 
+    /**
+     * Describe the Player object.
+     */
+    @Override
+    public String toString() {
+        return String.format("   ");
+    }
 }

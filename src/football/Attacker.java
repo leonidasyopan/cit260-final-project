@@ -30,7 +30,7 @@ public class Attacker extends Player {
 	
 	/**
 	 * 
-	 * @return
+	 * @return an specific action for attackers: score
 	 */
 	public boolean score() {
 		return true;

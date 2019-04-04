@@ -30,9 +30,17 @@ public class Defender extends Player {
 	
 	/**
 	 * 
-	 * @return
+	 * @return an specific action for defenders: tackle
 	 */
 	public boolean tackle() {		
 		return true;
 	}
+	
+	/**
+     * toString() override
+     */
+    @Override
+    public String toString() {
+        return String.format("", super.toString());
+    }
 }

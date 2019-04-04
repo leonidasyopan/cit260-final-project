@@ -30,10 +30,18 @@ public class Goalkeeper extends Player {
 	
 	/**
 	 * 
-	 * @return
+	 * @return an specific action for goal keepers: Use hands
 	 */
 	public boolean useHands() {		
 		return true;
 	}
+	
+	/**
+     * toString() override
+     */
+    @Override
+    public String toString() {
+        return String.format("", super.toString());
+    }
 
 }

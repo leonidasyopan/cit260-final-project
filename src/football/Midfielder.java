@@ -30,10 +30,18 @@ public class Midfielder extends Player {
 	
 	/**
 	 * 
-	 * @return
+	 *@return an specific action for midfielders: assist
 	 */
 	public boolean assist() {
 		
 		return true;
 	}
+	
+	/**
+     * toString() override
+     */
+    @Override
+    public String toString() {
+        return String.format("", super.toString());
+    }
 }

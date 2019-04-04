@@ -31,7 +31,6 @@ public class Team {
 		return goalkeeperList;
 	}
 	
-	
 	public ArrayList<Defender> listDefender() {
 		
 		ArrayList<Defender> defenderList = new ArrayList<>();
@@ -84,21 +83,21 @@ public class Team {
 	}
 	
 	/**
-	 * @return the name
+	 * @return the Team's name
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * @return the city
+	 * @return the Team's city
 	 */
 	public String getCity() {
 		return city;
 	}
 
 	/**
-	 * @return the country
+	 * @return the Team's country
 	 */
 	public String getCountry() {
 		return country;
