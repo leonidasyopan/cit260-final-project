@@ -85,46 +85,6 @@ public class Team {
 	}
 	
 	/**
-	 * 
-	 * @param scanner
-	 * @return
-	 */
-	private Goalkeeper readGoalkeeper(Scanner scanner) {
-		 
-		 return new Goalkeeper();
-	 }
-	
-	 /**
-	  * 
-	  * @param scanner
-	  * @return
-	  */
-	 private Defender readDefender(Scanner scanner) {		 
-		 
-		 return new Defender();
-	 }
-	 
-	 /**
-	  * 
-	  * @param scanner
-	  * @return
-	  */
-	 private Midfielder readMidfielder(Scanner scanner) {
-		 
-		 return new Midfielder();
-	 }
-	 
-	 /**
-	  * 
-	  * @param scanner
-	  * @return
-	  */
-	 private Attacker readAttacker(Scanner scanner) {
-		 
-		 return new Attacker();
-	 }
-
-	/**
 	 * @return the name
 	 */
 	public String getName() {
