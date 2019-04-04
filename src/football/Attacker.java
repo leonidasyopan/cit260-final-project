@@ -1,5 +1,9 @@
 package football;
 
+/*
+ * This class manage all data for the players who play in the 
+ * Attacker position 
+ */
 public class Attacker extends Player {
 	
 	/**
@@ -29,11 +33,18 @@ public class Attacker extends Player {
     }
 	
 	/**
-	 * 
 	 * @return an specific action for attackers: score
 	 */
 	public boolean score() {
 		return true;
 	}
+	
+	/**
+     * toString() override
+     */
+    @Override
+    public String toString() {
+        return String.format("", super.toString());
+    }
 
 }

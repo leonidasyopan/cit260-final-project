@@ -1,5 +1,9 @@
 package football;
 
+/*
+ * This class manage all data for the players who play in the 
+ * midfielder position 
+ */
 public class Midfielder extends Player {
 	
 	/**

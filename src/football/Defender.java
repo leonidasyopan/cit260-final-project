@@ -1,5 +1,9 @@
 package football;
 
+/*
+ * This class manage all data for the players who play in the 
+ * defender position 
+ */
 public class Defender extends Player {
 	
 	/**
@@ -29,7 +33,6 @@ public class Defender extends Player {
     }
 	
 	/**
-	 * 
 	 * @return an specific action for defenders: tackle
 	 */
 	public boolean tackle() {		

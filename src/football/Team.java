@@ -2,8 +2,16 @@ package football;
 
 import java.util.ArrayList;
 
+/**
+ * This class will manage the data for the team. From here we are going
+ * to organize everything in lists.
+ * Here we are going to read and write to a file.
+ * @author 
+ *
+ */
 public class Team {
-
+	
+	//declare all variables
 	private String name;
 	private String city;
 	private String country;
@@ -25,30 +33,46 @@ public class Team {
 		
 	}	
 	
+	/**
+	 * 
+	 * @return the goal keepers list
+	 */
 	public ArrayList<Goalkeeper> listGoalkeeper() {
 		
 		ArrayList<Goalkeeper> goalkeeperList = new ArrayList<>();
 		return goalkeeperList;
 	}
 	
+	/** 
+	 * @return the defenders list
+	 */
 	public ArrayList<Defender> listDefender() {
 		
 		ArrayList<Defender> defenderList = new ArrayList<>();
 		return defenderList;
 	}
 	
+	/**
+	 * @return the Midfielders list
+	 */
 	public ArrayList<Midfielder> listMidfielder() {
 		
 		ArrayList<Midfielder> midfielderList = new ArrayList<>();
 		return midfielderList;
 	}
 	
+	/**
+	 * @return the Attackers  list
+	 */
 	public ArrayList<Attacker> listAttacker() {
 		
 		ArrayList<Attacker> attackerList = new ArrayList<>();
 		return attackerList;
 	}
 	
+	/**
+	 * @return true for starters and false for reserve 
+	 */
 	public boolean changeStatus() {
 		
 		boolean starter = true;

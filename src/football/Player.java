@@ -33,7 +33,7 @@ public abstract class Player {
 	
 	/**
 	 * 
-	 * @return
+	 * @return what kind of pass every player have depending on its position
 	 */
 	public abstract String pass();	
 	
