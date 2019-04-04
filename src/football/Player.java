@@ -4,6 +4,7 @@ package football;
  * Base class of all players in our program.
  * Here we are going to load and store all the data for all 
  * the team squad
+ * @authors mahonrry and leonidas
  */
 public abstract class Player {
 	
