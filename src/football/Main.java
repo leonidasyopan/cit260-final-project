@@ -3,7 +3,7 @@ package football;
 import football.menu.*;
 
 /**
- * This is the Main Class, which starts the program with the Menu Options
+ * This is the Main Class, which starts the program with the Menu Options.
  * @author Mahonrry and Leonidas
  *
  */
