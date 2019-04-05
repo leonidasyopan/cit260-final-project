@@ -1,0 +1,41 @@
+package football.menu;
+
+/**
+ * Menu class for the use of Menu objects
+ * @author leoni
+ *
+ */
+public class MenuItem {
+	
+	// Setting parameters
+	private char key;
+	private String text;
+	
+	/**
+	 * Main constructor
+	 * @param key
+	 * @param text
+	 */
+	public MenuItem (char key, String text) {
+		this.key = key;
+		this.text = text;
+	}
+	
+	/**
+	 * Accessor
+	 * @return
+	 */
+	public char getKey() {
+		return key;
+	}
+	
+	/**
+	 * Accessor
+	 * @return
+	 */
+	public String getText() {
+		return text;
+	}
+	
+	
+}
