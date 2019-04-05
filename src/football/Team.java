@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * This class will manage the data for the team. From here we are going
  * to organize everything in lists.
  * Here we are going to read and write to a file.
- * @authors mahonrry and leonidas
+ * @authors Mahonrry and Leonidas
  *
  */
 public class Team {

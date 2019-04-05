@@ -3,7 +3,7 @@ package football;
 /*
  * This class manage all data for the players who play in the 
  * goal keeper position 
- * @authors mahonrry and leonidas
+ * @authors Mahonrry and Leonidas
  */
 public class Goalkeeper extends Player {	
 	

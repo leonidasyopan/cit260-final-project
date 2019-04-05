@@ -3,7 +3,7 @@ package football;
 /*
  * This class manage all data for the players who play in the 
  * defender position 
- * @authors mahonrry and leonidas
+ * @authors Mahonrry and Leonidas
  */
 public class Defender extends Player {
 	
