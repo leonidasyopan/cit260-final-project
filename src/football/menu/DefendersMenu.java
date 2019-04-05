@@ -49,11 +49,11 @@ public class DefendersMenu extends Menu {
 	protected boolean handleMenuSelection(char key) {
 		
 		switch (Character.toUpperCase(key)) {
-        case '1': 
+        case '1':
             System.out.println(" ");
             break;
         case '2':
-            System.out.println("");
+            System.out.println(" ");
             break;
             
         case 'R':

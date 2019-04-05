@@ -3,13 +3,13 @@ package football;
 import football.menu.*;
 
 /**
+ * This is the Main Class, which starts the program with the Menu Options
  * @author Mahonrry and Leonidas
  *
  */
 public class Main {
 
 	/**
-	 * This is the Main Class, which starts the program with the Menu Options
 	 * @param args
 	 */
 	public static void main(String[] args) {
