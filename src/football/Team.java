@@ -94,20 +94,49 @@ public class Team {
 	}
 	
 	/**
-	 * @return true for starters and false for reserve 
+	 * This is a method for changing the status of a player 
+	 * from Starter to Reserve (and vice versa)
+	 * The method uses the jersey number as the ID of the player. 
+	 * @param jerseyNumber
 	 */
-	public boolean changeStatus() {
+	public void changeStatus(int jerseyNumber) {
 		
-		boolean starter = true;
+		// Generates a local variable boolean for handling the change
+		boolean currentStatus = true;
 		
-		// reads the current status of a player based on it's jersey number
+		// Stores the number of the jersey of the player that must be changed
+		int currentPlayer = jerseyNumber; 		
 		
+		// reads the current status of the player based on it's jersey number			
+		// Loop through our Players list to check whether there is any player
+		// with the jersey number of the "currentPlayer"
+		for(int i=0; i<99; i++) {			
+			
+			
+			if( i = currentPlayer ) {
+				
+				
+				currentStatus = Player.isStarter();
+			}
+		}
 		
-		// if statement that will switch the current status
+		// "if statement" that will switch the current status
 		// if the player is a starter he will become a reserve
-		// if the player is a reserve he will become a starter
+		// if the player is a reserve he will become a starter		
+		if (currentStatus = true) {
+			// Select the player by jersey
+			
+			
+			// Change status to False (reserve)
+			Player.setStarter(false);
+		} else {
+			// Select the player by jersey
+			
+			
+			// Change status to True (starter)
+			Player.setStarter(true);
+		}		
 		
-		return starter;
 	}
 	
 	/**

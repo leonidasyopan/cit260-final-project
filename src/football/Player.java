@@ -29,7 +29,10 @@ public abstract class Player {
 	 * @param starter
 	 */
 	public Player (String name, String country, int number, boolean starter) {
-		
+		this.name = name;
+		this.country = country;
+		this.number = number;
+		this.starter = starter;
 	}
 	
 	/**
