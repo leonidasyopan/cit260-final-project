@@ -107,6 +107,16 @@ public class Team {
 		// Stores the number of the jersey of the player that must be changed
 		int currentPlayer = jerseyNumber; 		
 		
+		
+		
+		Player player = players.get(i);
+		if ( player.getNumber() == currentPlayer) {
+			player.setCurrentStatus(! player.getCurrentStatus());
+		}
+		
+		
+		
+		
 		// reads the current status of the player based on it's jersey number			
 		// Loop through our Players list to check whether there is any player
 		// with the jersey number of the "currentPlayer"
