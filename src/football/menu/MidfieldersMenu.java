@@ -1,5 +1,7 @@
 package football.menu;
 
+import football.Midfielder;
+
 public class MidfieldersMenu extends Menu {	
 	
 	/**
@@ -50,7 +52,7 @@ public class MidfieldersMenu extends Menu {
 		
 		switch (Character.toUpperCase(key)) {
         case '1': 
-            System.out.println(" ");
+        	printPlayers(Midfielder.class);
             break;
         case '2':
             System.out.println("");

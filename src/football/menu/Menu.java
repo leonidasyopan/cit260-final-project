@@ -2,6 +2,9 @@ package football.menu;
 
 import java.util.Scanner;
 
+import football.Player;
+import football.TeamDatabase;
+
 /**
  * Our menu base class to provide all the things for writing menus
  * @author leonidas and mahonrry
@@ -105,6 +108,27 @@ public abstract class Menu {
 			
 		}
 	}
+	
+	
+	/**
+     * Print out the players based on their position
+     * @param playerClass
+     */
+    protected void printPlayers(Class playerClass) {
+
+        boolean somethingPrinted = false;
+
+        for (Player player : TeamDatabase.getSquad()) {
+            if (playerClass.isInstance(player)) {
+                System.out.println(player.toString());
+                somethingPrinted = true;
+            }
+        }
+
+        if (somethingPrinted == false) {
+            System.out.printf("We don't currently have any %ss.%n", playerClass.getSimpleName());
+        }
+    }
 	
 	/**
 	 * Prompt the user for input and return whatever they type. The user must hit Enter before the value is returned.
