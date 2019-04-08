@@ -11,7 +11,7 @@ public class Goalkeeper extends Player {
 	 * Default Constructor
 	 */
 	public Goalkeeper() {
-		
+		super();
 	}
 	
 	/**
@@ -22,7 +22,7 @@ public class Goalkeeper extends Player {
 	 * @param starter
 	 */
 	public Goalkeeper(String name, String country, int number, boolean starter) {
-		
+		super(name, country, number, starter);
 	}
 	
 	/**
@@ -46,7 +46,7 @@ public class Goalkeeper extends Player {
      */
     @Override
     public String toString() {
-        return String.format("", super.toString());
+    	return String.format("Goalkeeper { %s }", super.toString());     
     }
 
 }

@@ -11,7 +11,7 @@ public class Midfielder extends Player {
 	 * Default constructor
 	 */
 	public Midfielder() {
-		
+		super();
 	}
 	
 	/**
@@ -22,7 +22,7 @@ public class Midfielder extends Player {
 	 * @param starter
 	 */
 	public Midfielder(String name, String country, int number, boolean starter) {
-		
+		super(name, country, number, starter);
 	}
 	
 	/**
@@ -47,6 +47,6 @@ public class Midfielder extends Player {
      */
     @Override
     public String toString() {
-        return String.format("", super.toString());
+    	return String.format("Midfielder { %s }", super.toString());     
     }
 }

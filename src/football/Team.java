@@ -20,7 +20,7 @@ public class Team {
 	 * Default Constructor
 	 */
 	public Team() {
-		
+		// empity constructor
 	}
 	
 	/**
@@ -30,7 +30,9 @@ public class Team {
 	 * @param country
 	 */
 	public Team(String name, String city, String country) {
-		
+		this.name = name;
+		this.city = city;
+		this.country = country;
 	}	
 	
 	/**
@@ -105,22 +107,17 @@ public class Team {
 		boolean currentStatus = true;
 		
 		// Stores the number of the jersey of the player that must be changed
-		int currentPlayer = jerseyNumber; 		
-		
-		
-		
-		Player player = players.get(i);
-		if ( player.getNumber() == currentPlayer) {
-			player.setCurrentStatus(! player.getCurrentStatus());
-		}
-		
-		
-		
+		int currentPlayer = jerseyNumber;		
 		
 		// reads the current status of the player based on it's jersey number			
 		// Loop through our Players list to check whether there is any player
 		// with the jersey number of the "currentPlayer"
-		for(int i=0; i<99; i++) {			
+		for(int i=0; i<99; i++) {
+			
+			Player player = player.get(i);
+			if ( player.getNumber() == currentPlayer) {
+				player.setCurrentStatus(! player.getCurrentStatus());
+			}
 			
 			
 			if( i = currentPlayer ) {

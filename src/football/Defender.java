@@ -11,7 +11,7 @@ public class Defender extends Player {
 	 * Default Constructor
 	 */
 	public Defender() {
-		
+		super();
 	}
 	
 	/**
@@ -22,7 +22,7 @@ public class Defender extends Player {
 	 * @param starter
 	 */
 	public Defender(String name, String country, int number, boolean starter) {
-		
+		super(name, country, number, starter);
 	}
 	
 	/**
@@ -45,6 +45,6 @@ public class Defender extends Player {
      */
     @Override
     public String toString() {
-        return String.format("", super.toString());
+        return String.format("Denfender { %s }", super.toString());        
     }
 }

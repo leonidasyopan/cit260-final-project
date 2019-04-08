@@ -105,6 +105,6 @@ public abstract class Player {
      */
     @Override
     public String toString() {
-        return String.format("   ");
+        return String.format("{ %s, number %d }", name, number);  
     }
 }

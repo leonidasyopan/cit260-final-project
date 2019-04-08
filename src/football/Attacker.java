@@ -11,7 +11,7 @@ public class Attacker extends Player {
 	 * Default Constructor
 	 */
 	public Attacker() {
-		
+		super();
 	}
 	
 	/**
@@ -22,7 +22,7 @@ public class Attacker extends Player {
 	 * @param starter
 	 */
 	public Attacker(String name, String country, int number, boolean starter) {
-		
+		super(name, country, number, starter);
 	}
 	
 	/**
@@ -45,7 +45,7 @@ public class Attacker extends Player {
      */
     @Override
     public String toString() {
-        return String.format("", super.toString());
+    	return String.format("Attacker { %s }", super.toString());     
     }
 
 }
