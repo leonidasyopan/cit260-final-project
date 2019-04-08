@@ -89,7 +89,7 @@ public class Team {
 		ArrayList<Attacker> attackerList = new ArrayList<>();
 		new Attacker("Ousmane Dembélé", "France" , 11, false);
 		new Attacker("Lionel Messi", "Argentina" , 10, false);
-		new Attacker("Malcolm", "Brzil" , 14, false);
+		new Attacker("Malcolm", "Brazil" , 14, false);
 		new Attacker("Luis Suárez", "Uruguay" , 9, false);
 		new Attacker("Kevin-Prince Boateng", "Ghana" , 19, false);
 		return attackerList;
