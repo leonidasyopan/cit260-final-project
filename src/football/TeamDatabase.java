@@ -30,25 +30,9 @@ public class TeamDatabase {
         return squad;
     }	    
 
-    
-//    /**
-//	 * 
-//	 * @return the goalkeepers list
-//	 */
-//    synchronized public static ArrayList<Goalkeeper> listGoalkeeper() {
-//		
-//		ArrayList<Goalkeeper> goalkeeperList = new ArrayList<>();
+
 //		new Goalkeeper("Marc-André Ter Stegen", "Germany" , 1, false);
 //		new Goalkeeper("Jasper Cillessen", "Netherlands", 13, false);
-//		return goalkeeperList;
-//	}
-//	
-//	/** 
-//	 * @return the defenders list
-//	 */
-//    synchronized public static ArrayList<Defender> listDefender() {
-//		
-//		ArrayList<Defender> defenderList = new ArrayList<>();
 //		new Defender("Samuel Umtity", "France" , 23, false);
 //		new Defender("Clément Lenglet", "France" , 15, false);
 //		new Defender("Gerard Piqué", "Spain" , 3, false);
@@ -58,15 +42,6 @@ public class TeamDatabase {
 //		new Defender("Jordi Alba", "Spain" , 18, false);
 //		new Defender("Sergi Roberto", "Spain" , 20, false);
 //		new Defender("Nelson Semedo", "Portugal" , 2, false);
-//		return defenderList;
-//	}
-//	
-//	/**
-//	 * @return the Midfielders list
-//	 */
-//    synchronized public static ArrayList<Midfielder> listMidfielder() {
-//		
-//		ArrayList<Midfielder> midfielderList = new ArrayList<>();
 //		new Midfielder("Sergio Busquets", "Spain" , 5, false);
 //		new Midfielder("Arthur", "Brazil" , 8, false);
 //		new Midfielder("Ivan Rakitic", "Croatia" ,4, false);
@@ -74,23 +49,11 @@ public class TeamDatabase {
 //		new Midfielder("Arturo Vidal", "Chile" , 22, false);
 //		new Midfielder("Rafinha", "Spain" ,12, false);
 //		new Midfielder("Philippe Coutinho", "Brazil" , 7, false);
-//		return midfielderList;
-//	}
-//	
-//	/**
-//	 * @return the Attackers  list
-//	 */
-//    synchronized public static ArrayList<Attacker> listAttacker() {
-//		
-//		ArrayList<Attacker> attackerList = new ArrayList<>();
 //		new Attacker("Ousmane Dembélé", "France" , 11, false);
 //		new Attacker("Lionel Messi", "Argentina" , 10, false);
 //		new Attacker("Malcolm", "Brazil" , 14, false);
 //		new Attacker("Luis Suárez", "Uruguay" , 9, false);
 //		new Attacker("Kevin-Prince Boateng", "Ghana" , 19, false);
-//		return attackerList;
-//	}
-    
       
     
     
@@ -98,8 +61,8 @@ public class TeamDatabase {
      * Write the list of players to a file
      * Each player will show: Position, Name, Number and Starter Status (True or False)
      */
-    public static void storeSquad() {   	
-    	 	        
+    public static void storeSquad() {   
+    	    	 	        
         File textFile = new File(FILEPATH);
         
         try (PrintWriter out = new PrintWriter(new FileOutputStream(textFile))) {            

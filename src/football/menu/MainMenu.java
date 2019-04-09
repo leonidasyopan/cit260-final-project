@@ -1,6 +1,7 @@
 package football.menu;
 
 import football.TeamDatabase;
+import football.Player;
 
 public class MainMenu extends Menu {	
 	
@@ -40,8 +41,9 @@ public class MainMenu extends Menu {
 				new MenuItem('2', "Defenders"),
 				new MenuItem('3', "Midfielders"),
 				new MenuItem('4', "Attackers"),
-				new MenuItem('5', "Print Squad"),
-				new MenuItem('6', "Read Squad")
+				new MenuItem('5', "List Complete Squad"),
+				new MenuItem('6', "Print Squad"),
+				new MenuItem('Q', "Quit Program")
 		};
 	}
 	
@@ -71,13 +73,13 @@ public class MainMenu extends Menu {
         	attackersMenu.display();
             break;
         case '5':
+        	System.out.println("Complete Squad");
+        	printPlayers(Player.class);
+            break;
+        case '6':
         	TeamDatabase.storeSquad();
         	System.out.println("File has been properly Printed to a TXT File.");
             break;
-        case '6':
-        	System.out.println("Reading Squad into TXT File");
-            break;
-            
         case 'Q':
             return false;
             
