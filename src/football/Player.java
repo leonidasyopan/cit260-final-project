@@ -106,7 +106,7 @@ public class Player {
      */
     @Override
     public String toString() {
-        return String.format("{ %s, number %d }", name, number);  
+        return String.format("%s, number %d", name, number);  
     }
 
 	protected Player get(int i) {

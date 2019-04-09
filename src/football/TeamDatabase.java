@@ -55,12 +55,8 @@ public class TeamDatabase {
 //	new Attacker("Luis Suárez", "Uruguay" , 9, false);
 //	new Attacker("Kevin-Prince Boateng", "Ghana" , 19, false);   
     
-    
-    
-    
-    
-    
-    
+
+   
     
 //    /**
 //	 * 
@@ -215,7 +211,7 @@ public class TeamDatabase {
     	int number = 0;
     	boolean starter = true;
         
-        for (int i=0; i < 5; i++) {
+        for (int i=0; i < 4; i++) {
             
             String key = scanner.next();
             
@@ -256,7 +252,7 @@ public class TeamDatabase {
     	int number = 0;
     	boolean starter = true;
         
-        for (int i=0; i < 5; i++) {
+        for (int i=0; i < 4; i++) {
             
             String key = scanner.next();
             
@@ -291,12 +287,12 @@ public class TeamDatabase {
      */    
     private static Midfielder readMidfielder(Scanner scanner) {
         
-        String name = null;        
+    	String name = null;        
     	String country = null;
     	int number = 0;
     	boolean starter = true;
         
-        for (int i=0; i < 5; i++) {
+        for (int i=0; i < 4; i++) {
             
             String key = scanner.next();
             
@@ -336,7 +332,7 @@ public class TeamDatabase {
     	int number = 0;
     	boolean starter = true;
         
-        for (int i=0; i < 5; i++) {
+        for (int i=0; i < 4; i++) {
             
             String key = scanner.next();
             
