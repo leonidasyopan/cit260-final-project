@@ -13,7 +13,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		// Creates the Main Menu for the program
 		Menu menu = new MainMenu();
 		

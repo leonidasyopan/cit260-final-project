@@ -1,5 +1,7 @@
 package football.menu;
 
+import football.TeamDatabase;
+
 public class MainMenu extends Menu {	
 	
 	/**
@@ -69,10 +71,11 @@ public class MainMenu extends Menu {
         	attackersMenu.display();
             break;
         case '5':
-            System.out.println("Printing Squad into TXT File");
+        	TeamDatabase.storeSquad();
+        	System.out.println("File has been properly Printed to a TXT File.");
             break;
         case '6':
-            System.out.println("Read Squad from a TXT File");
+        	System.out.println("Reading Squad into TXT File");
             break;
             
         case 'Q':
