@@ -6,12 +6,12 @@ package football;
  * the team squad
  * @authors Mahonrry and Leonidas
  */
-public abstract class Player {
+public class Player {
 	
 	private String name;
 	private String country;
 	private int number;
-	private boolean starter;
+	private static boolean starter;
 	
     /** 
      * Default Constructor
@@ -32,29 +32,30 @@ public abstract class Player {
 		this.name = name;
 		this.country = country;
 		this.number = number;
-		this.starter = starter;
+		Player.starter = starter;
 	}
 	
 	/**
 	 * 
 	 * @return what kind of pass every player have depending on its position
 	 */
-	public abstract String pass();	
+	public String pass() {
+		return null;
+	}	
 	
 	
 	/**
 	 * @return the starter
 	 */
-	public boolean isStarter() {
+	public static boolean isStarter() {
 		return starter;
 	}
 	
 	/**
 	 * @param starter the starter to set
 	 */
-	public void setStarter(boolean starter) {
-		this.starter = starter;
-	}
+	public static void setStarter(boolean starter) {
+		}
 	
 	/**
 	 * @return the Player's name
@@ -107,4 +108,15 @@ public abstract class Player {
     public String toString() {
         return String.format("{ %s, number %d }", name, number);  
     }
+
+	protected Player get(int i) {
+		return null;
+	}
+
+	protected boolean getCurrentStatus() {
+		return false;
+	}
+
+	protected void setCurrentStatus(boolean b) {
+	}
 }

@@ -122,14 +122,7 @@ public class TeamDatabase {
 //		return attackerList;
 //	}
     
-    
-    
-    
-    
-    
-    
-    
-    
+      
     
     
     /**
@@ -147,7 +140,7 @@ public class TeamDatabase {
                 out.printf("Name: %s%n", player.getName());
                 out.printf("Country: %s%m", player.getCountry());
                 out.printf("Number: %d%n", player.getNumber());
-                out.printf("Starter: %b%n", player.isStarter());
+                out.printf("Starter: %b%n", Player.isStarter());
             }           
         
         } catch (FileNotFoundException exception) {
@@ -215,7 +208,7 @@ public class TeamDatabase {
      * @param scanner
      * @return
      */    
-    private static Goalkeeper readGoalkeeper(Scanner scanner) {
+    private static  Goalkeeper readGoalkeeper(Scanner scanner) {
         
         String name = null;        
     	String country = null;

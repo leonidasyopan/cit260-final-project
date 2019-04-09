@@ -1,7 +1,5 @@
 package football;
 
-import java.util.ArrayList;
-
 /**
  * This class will manage the data for the team. From here we are going
  * to organize everything in lists.
@@ -20,7 +18,7 @@ public class Team {
 	 * Default Constructor
 	 */
 	public Team() {
-		// empity constructor
+		// empty constructor
 	}
 	
 	/**
@@ -43,7 +41,9 @@ public class Team {
 	 * The method uses the jersey number as the ID of the player. 
 	 * @param jerseyNumber
 	 */
-	public void changeStatus(int jerseyNumber) {
+	
+	 public void changeStatus(int jerseyNumber) {
+	 
 		
 		// Generates a local variable boolean for handling the change
 		boolean currentStatus = true;
@@ -56,13 +56,14 @@ public class Team {
 		// with the jersey number of the "currentPlayer"
 		for(int i=0; i<99; i++) {
 			
-			Player player = player.get(i);
+			Player player2 = null;
+			Player player = player2.get(i);
 			if ( player.getNumber() == currentPlayer) {
 				player.setCurrentStatus(! player.getCurrentStatus());
 			}
 			
 			
-			if( i = currentPlayer ) {
+			if( i == currentPlayer ) {
 				
 				
 				currentStatus = Player.isStarter();

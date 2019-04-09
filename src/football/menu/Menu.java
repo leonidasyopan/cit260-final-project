@@ -114,7 +114,7 @@ public abstract class Menu {
      * Print out the players based on their position
      * @param playerClass
      */
-    protected void printPlayers(Class playerClass) {
+    protected void printPlayers(Class<?> playerClass) {
 
         boolean somethingPrinted = false;
 
