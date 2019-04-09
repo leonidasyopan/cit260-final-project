@@ -106,7 +106,15 @@ public class Player {
      */
     @Override
     public String toString() {
-        return String.format("%s, number %d", name, number);  
+    	String statusName = null;
+    	
+    	if (Player.starter == true) {
+    		statusName = "Starter";
+    	} else {
+    		statusName = "Reserve";
+    	}
+    	
+        return String.format("%s, Number: %d, Country: %s, %s", name, number, country, statusName);  
     }
 
 	protected Player get(int i) {
