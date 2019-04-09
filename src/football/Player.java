@@ -108,7 +108,7 @@ public class Player {
     public String toString() {
     	String statusName = null;
     	
-    	if (Player.starter == true) {
+    	if (starter  == true) {
     		statusName = "Starter";
     	} else {
     		statusName = "Reserve";
