@@ -62,6 +62,8 @@ public class TeamDatabase {
      * Each player will show: Position, Name, Number and Starter Status (True or False)
      */
     public static void storeSquad() {   
+    	
+    	getSquad();
     	    	 	        
         File textFile = new File(FILEPATH);
         
@@ -70,7 +72,7 @@ public class TeamDatabase {
             for (Player player : squad) {
                 out.printf("Position: %s%n", player.getClass().getSimpleName());
                 out.printf("Name: %s%n", player.getName());
-                out.printf("Country: %s%m", player.getCountry());
+                out.printf("Country: %s%n", player.getCountry());
                 out.printf("Number: %d%n", player.getNumber());
                 out.printf("Starter: %b%n", Player.isStarter());
             }
