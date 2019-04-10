@@ -18,7 +18,7 @@ public class MainMenu extends Menu {
 	 */
 	@Override
 	protected String getTitle() {
-		return "FOOTBALL TEAM";
+		return "BARCELONA FOOTBALL CLUB";
 	}
 	
 	/**

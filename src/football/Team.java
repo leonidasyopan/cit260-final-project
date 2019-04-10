@@ -31,9 +31,7 @@ public class Team {
 		this.name = name;
 		this.city = city;
 		this.country = country;
-	}	
-	
-	
+	}		
 	
 	/**
 	 * This is a method for changing the status of a player 
@@ -108,6 +106,27 @@ public class Team {
 	 */
 	public String getCountry() {
 		return country;
+	}
+
+	/**
+	 * @param name to set the name
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @param city to set the city
+	 */
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	/**
+	 * @param country to set the country 
+	 */
+	public void setCountry(String country) {
+		this.country = country;
 	}	
 	
 }
