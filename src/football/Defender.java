@@ -45,7 +45,7 @@ public class Defender extends Player {
      */
     @Override
     public String toString() {
-        return String.format("Denfender { %s }", super.toString());        
+        return String.format("DEFENDER:     %s", super.toString());        
     }
 	
 }

@@ -48,7 +48,7 @@ public class Midfielder extends Player {
      */
 	@Override
     public String toString() {
-    	return String.format("Midfielder { %s }", super.toString());    
+    	return String.format("MIDFIELDER:   %s", super.toString());    
 	}
 	
 }

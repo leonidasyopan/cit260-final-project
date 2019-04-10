@@ -73,7 +73,9 @@ public class MainMenu extends Menu {
         	attackersMenu.display();
             break;
         case '5':
-        	System.out.println("Complete Squad");
+        	System.out.println(" ");
+        	System.out.println("COMPLETE SQUAD");
+        	System.out.println(" ");
         	printPlayers(Player.class);
             break;
         case '6':
@@ -83,8 +85,8 @@ public class MainMenu extends Menu {
         case 'Q':
             return false;
             
-        default:
-            System.out.println("Invalid Entry");
+        default:       	
+        	System.out.println("Invalid Entry");
         
     }
 		

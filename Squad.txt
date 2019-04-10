@@ -49,7 +49,7 @@ Country: Spain
 Number: 5
 Starter: true
 Position: Midfielder
-Name: Arthur
+Name: Arthur Melo
 Country: Brazil
 Number: 8
 Starter: true
@@ -79,7 +79,7 @@ Country: Argentina
 Number: 10
 Starter: true
 Position: Attacker
-Name: Malcolm
+Name: Malcolm Silva
 Country: Brazil
 Number: 14
 Starter: false
