@@ -10,7 +10,7 @@ Number: 13
 Starter: false
 Position: Defender
 Name: Samuel Umtiti
-Country: Netherlands 
+Country: Netherlands
 Number: 23
 Starter: false
 Position: Defender
@@ -72,7 +72,7 @@ Position: Attacker
 Name: Ousmane Dembélé
 Country: France
 Number: 11
-Starter: false
+Starter: true
 Position: Attacker
 Name: Lionel Messi
 Country: Argentina
