@@ -73,7 +73,9 @@ public class TeamDatabase {
                 out.printf("Country: %s%m", player.getCountry());
                 out.printf("Number: %d%n", player.getNumber());
                 out.printf("Starter: %b%n", Player.isStarter());
-            }           
+            }
+            
+            out.flush();
         
         } catch (FileNotFoundException exception) {
             System.err.println("Could not find file path");
