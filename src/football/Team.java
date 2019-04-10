@@ -40,52 +40,52 @@ public class Team {
 	 * @param jerseyNumber
 	 */
 	
-	 public void changeStatus(int jerseyNumber) {
-	 
-		
-		// Generates a local variable boolean for handling the change
-		boolean currentStatus = true;
-		
-		// Stores the number of the jersey of the player that must be changed
-		int currentPlayer = jerseyNumber;		
-		
-		// reads the current status of the player based on it's jersey number			
-		// Loop through our Players list to check whether there is any player
-		// with the jersey number of the "currentPlayer"
-		for(int i=0; i<99; i++) {
-			
-			Player player2 = null;
-			Player player = player2.get(i);
-			if ( player.getNumber() == currentPlayer) {
-				player.setCurrentStatus(! player.getCurrentStatus());
-			}
-			
-			
-			if( i == currentPlayer ) {
-				
-				
-				currentStatus = Player.isStarter();
-			}
-		}
-		
-		// "if statement" that will switch the current status
-		// if the player is a starter he will become a reserve
-		// if the player is a reserve he will become a starter		
-		if (currentStatus = true) {
-			// Select the player by jersey
-			
-			
-			// Change status to False (reserve)
-			Player.setStarter(false);
-		} else {
-			// Select the player by jersey
-			
-			
-			// Change status to True (starter)
-			Player.setStarter(true);
-		}		
-		
-	}	
+//	 public void changeStatus(int jerseyNumber) {
+//	 
+//		
+//		// Generates a local variable boolean for handling the change
+//		boolean currentStatus = true;
+//		
+//		// Stores the number of the jersey of the player that must be changed
+//		int currentPlayer = jerseyNumber;		
+//		
+//		// reads the current status of the player based on it's jersey number			
+//		// Loop through our Players list to check whether there is any player
+//		// with the jersey number of the "currentPlayer"
+//		for(int i=0; i<99; i++) {
+//			
+//			Player player2 = null;
+//			Player player = player2.get(i);
+//			if ( player.getNumber() == currentPlayer) {
+//				player.setCurrentStatus(! player.getCurrentStatus());
+//			}
+//			
+//			
+//			if( i == currentPlayer ) {
+//				
+//				
+//				currentStatus = Player.isStarter();
+//			}
+//		}
+//		
+//		// "if statement" that will switch the current status
+//		// if the player is a starter he will become a reserve
+//		// if the player is a reserve he will become a starter		
+//		if (currentStatus = true) {
+//			// Select the player by jersey
+//			
+//			
+//			// Change status to False (reserve)
+//			Player.setStarter(false);
+//		} else {
+//			// Select the player by jersey
+//			
+//			
+//			// Change status to True (starter)
+//			Player.setStarter(true);
+//		}		
+//		
+//	}	
 	
 	/**
 	 * @return the Team's name

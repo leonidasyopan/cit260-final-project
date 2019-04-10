@@ -48,7 +48,7 @@ public class TeamDatabase {
                 out.printf("Name: %s%n", player.getName());
                 out.printf("Country: %s%n", player.getCountry());
                 out.printf("Number: %d%n", player.getNumber());
-                out.printf("Starter: %b%n", Player.isStarter());
+                out.printf("Starter: %b%n", player.isStarter());
             }
             
             out.flush();

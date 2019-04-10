@@ -11,7 +11,7 @@ public class Player {
 	private String name;
 	private String country;
 	private int number;
-	private static boolean starter;
+	private boolean starter;
 	
     /** 
      * Default Constructor
@@ -32,7 +32,7 @@ public class Player {
 		this.name = name;
 		this.country = country;
 		this.number = number;
-		Player.starter = starter;
+		this.starter = starter;
 	}
 	
 	/**
@@ -47,14 +47,14 @@ public class Player {
 	/**
 	 * @return the starter
 	 */
-	public static boolean isStarter() {
+	public boolean isStarter() {
 		return starter;
 	}
 	
 	/**
 	 * @param starter the starter to set
 	 */
-	public static void setStarter(boolean starter) {
+	public void setStarter(boolean starter) {
 		}
 	
 	/**
@@ -117,14 +117,14 @@ public class Player {
         return String.format("%s, Number: %d, Country: %s, %s", name, number, country, statusName);  
     }
 
-	protected Player get(int i) {
-		return null;
-	}
-
-	protected boolean getCurrentStatus() {
-		return false;
-	}
-
-	protected void setCurrentStatus(boolean b) {
-	}
+//	protected Player get(int i) {
+//		return null;
+//	}
+//
+//	protected boolean getCurrentStatus() {
+//		return false;
+//	}
+//
+//	protected void setCurrentStatus(boolean b) {
+//	}
 }
