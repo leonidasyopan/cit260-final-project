@@ -138,9 +138,16 @@ public abstract class Menu {
      * in order to change the Status of a Specific player.
      */
 	public void promptChage() {
+		// Prompt the user for the number
 		String userPlayer = prompt("Type the Number of the Player you want to change the status: ");
+
+		// Brings the Squad with the list of players into scope
 		ArrayList<Player> squad = TeamDatabase.getSquad();
+		
+		// Creates a String variable to store the result of the changeStatus method
 		String resultChange = Team.changeStatus(Integer.parseInt(userPlayer), squad);
+		
+		// Prints out the result to screen.
 		System.out.println(resultChange);
 	}
 

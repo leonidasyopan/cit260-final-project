@@ -118,14 +118,4 @@ public class Player {
         return String.format("%s, Number: %d, Country: %s, %s", name, number, country, statusName);  
     }
 
-//	protected Player get(int i) {
-//		return null;
-//	}
-//
-//	protected boolean getCurrentStatus() {
-//		return false;
-//	}
-//
-//	protected void setCurrentStatus(boolean b) {
-//	}
 }
