@@ -1,7 +1,7 @@
 package football;
 
 /*
- * This class will manage all data for the players who play in the 
+ * This class manage all data for the players who play in the 
  * Attacker position 
  * @authors Mahonrry and Leonidas
  */
