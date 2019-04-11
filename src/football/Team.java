@@ -42,10 +42,13 @@ public class Team {
 	 * @param jerseyNumber
 	 * @param squad
 	 */
-	public static void changeStatus(int jerseyNumber, ArrayList<Player> squad) {
+	public static String changeStatus(int jerseyNumber, ArrayList<Player> squad) {
 
 		// Bring the Squad to scope
-//		ArrayList<Player> squad = TeamDatabase.getSquad();		
+//		ArrayList<Player> squad = TeamDatabase.getSquad();
+		
+		// Create a variable to store the result of the change
+		String resultChange = null;
 
 		// Stores the number of the jersey of the player that must be changed
 		int currentPlayer = jerseyNumber;
@@ -65,12 +68,16 @@ public class Team {
 				if (currentStatus = true) {					
 					// Change status to False (reserve)
 					player.setStarter(false);
+					resultChange = "Player player.getNumber() is now a Reserve";
 				} else {
 					// Change status to True (starter)
 					player.setStarter(true);
+					resultChange = "Player player.getNumber() is now a Starter";
 				}
 			}
 		}
+		
+		return resultChange;
 		
 	}
 
