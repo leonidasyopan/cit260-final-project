@@ -55,7 +55,7 @@ public class MidfieldersMenu extends Menu {
         	printPlayers(Midfielder.class);
             break;
         case '2':
-            System.out.println("");
+        	promptChage();
             break;
             
         case 'R':

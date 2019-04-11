@@ -1,7 +1,7 @@
 package football;
 
 /**
- * Base class of all players in our program.
+ * Base class for all players in the program.
  * Here we are going to load and store all the data for all 
  * the team squad
  * @authors Mahonrry and Leonidas
@@ -11,7 +11,7 @@ public class Player {
 	private String name;
 	private String country;
 	private int number;
-	private static boolean starter;
+	private boolean starter;
 	
     /** 
      * Default Constructor
@@ -32,7 +32,7 @@ public class Player {
 		this.name = name;
 		this.country = country;
 		this.number = number;
-		Player.starter = starter;
+		this.starter = starter;
 	}
 	
 	/**
@@ -47,14 +47,15 @@ public class Player {
 	/**
 	 * @return the starter
 	 */
-	public static boolean isStarter() {
+	public boolean isStarter() {
 		return starter;
 	}
 	
 	/**
-	 * @param starter the starter to set
+	 * @param Set the players who's going to be starter
 	 */
-	public static void setStarter(boolean starter) {
+	public void setStarter(boolean starter) {	
+		this.starter = starter;
 		}
 	
 	/**
@@ -117,14 +118,4 @@ public class Player {
         return String.format("%s, Number: %d, Country: %s, %s", name, number, country, statusName);  
     }
 
-	protected Player get(int i) {
-		return null;
-	}
-
-	protected boolean getCurrentStatus() {
-		return false;
-	}
-
-	protected void setCurrentStatus(boolean b) {
-	}
 }

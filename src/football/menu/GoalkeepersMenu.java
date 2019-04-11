@@ -55,7 +55,7 @@ public class GoalkeepersMenu extends Menu {
         	printPlayers(Goalkeeper.class);
             break;
         case '2':
-            System.out.println("");
+        	promptChage();
             break;
             
         case 'R':
@@ -68,5 +68,7 @@ public class GoalkeepersMenu extends Menu {
 		
 		return true;
 	}
-
+	
 }
+
+

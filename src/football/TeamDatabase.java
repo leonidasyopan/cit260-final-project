@@ -1,6 +1,6 @@
 package football;
 
-// imports all packages required by our database
+// Imports all packages required by our database
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -11,10 +11,10 @@ import java.io.PrintWriter;
 
 public class TeamDatabase {
 	
-	// creates a constant for the name of our file
+	// Creates a constant for the name of our file
 	private static final String FILEPATH = "Squad.txt";
     
-	// creates an Arraylist for listing the whole Squad
+	// creates an Array list for listing the whole Team Squad
     private static ArrayList<Player> squad = null;
     
     /**
@@ -30,38 +30,14 @@ public class TeamDatabase {
         return squad;
     }	    
 
-
-//		new Goalkeeper("Marc-André Ter Stegen", "Germany" , 1, false);
-//		new Goalkeeper("Jasper Cillessen", "Netherlands", 13, false);
-//		new Defender("Samuel Umtity", "France" , 23, false);
-//		new Defender("Clément Lenglet", "France" , 15, false);
-//		new Defender("Gerard Piqué", "Spain" , 3, false);
-//		new Defender("Jeison Murillo", "Colombia" , 17, false);
-//		new Defender("Jean Claire Todibo", "France" , 6, false);
-//		new Defender("Thomas Vermaelen", "Germany" , 24, false);
-//		new Defender("Jordi Alba", "Spain" , 18, false);
-//		new Defender("Sergi Roberto", "Spain" , 20, false);
-//		new Defender("Nelson Semedo", "Portugal" , 2, false);
-//		new Midfielder("Sergio Busquets", "Spain" , 5, false);
-//		new Midfielder("Arthur", "Brazil" , 8, false);
-//		new Midfielder("Ivan Rakitic", "Croatia" ,4, false);
-//		new Midfielder("Carles Aleñá", "Spain" , 21, false);
-//		new Midfielder("Arturo Vidal", "Chile" , 22, false);
-//		new Midfielder("Rafinha", "Spain" ,12, false);
-//		new Midfielder("Philippe Coutinho", "Brazil" , 7, false);
-//		new Attacker("Ousmane Dembélé", "France" , 11, false);
-//		new Attacker("Lionel Messi", "Argentina" , 10, false);
-//		new Attacker("Malcolm", "Brazil" , 14, false);
-//		new Attacker("Luis Suárez", "Uruguay" , 9, false);
-//		new Attacker("Kevin-Prince Boateng", "Ghana" , 19, false);
-      
-    
     
     /**
      * Write the list of players to a file
-     * Each player will show: Position, Name, Number and Starter Status (True or False)
+     * Each player will show: Position, Name, Number and Starter Status (Starter or Reserve)
      */
     public static void storeSquad() {   
+    	
+    	getSquad();
     	    	 	        
         File textFile = new File(FILEPATH);
         
@@ -70,10 +46,12 @@ public class TeamDatabase {
             for (Player player : squad) {
                 out.printf("Position: %s%n", player.getClass().getSimpleName());
                 out.printf("Name: %s%n", player.getName());
-                out.printf("Country: %s%m", player.getCountry());
+                out.printf("Country: %s%n", player.getCountry());
                 out.printf("Number: %d%n", player.getNumber());
-                out.printf("Starter: %b%n", Player.isStarter());
-            }           
+                out.printf("Starter: %b%n", player.isStarter());
+            }
+            
+            out.flush();
         
         } catch (FileNotFoundException exception) {
             System.err.println("Could not find file path");

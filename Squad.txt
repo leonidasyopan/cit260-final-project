@@ -1,0 +1,95 @@
+Position: Goalkeeper
+Name: Marc-André Ter Stegen
+Country: Germany
+Number: 1
+Starter: true
+Position: Goalkeeper
+Name: Jasper Cillessen
+Country: Netherlands
+Number: 13
+Starter: false
+Position: Defender
+Name: Samuel Umtiti
+Country: Netherlands
+Number: 23
+Starter: false
+Position: Defender
+Name: Clément Lenglet
+Country: France
+Number: 15
+Starter: true
+Position: Defender
+Name: Gerard Piqué
+Country: Spain
+Number: 3
+Starter: true
+Position: Defender
+Name: Thomas Vermaelen
+Country: Germany
+Number: 24
+Starter: false
+Position: Defender
+Name: Jordi Alba
+Country: Spain
+Number: 18
+Starter: true
+Position: Defender
+Name: Sergi Roberto
+Country: Spain
+Number: 20
+Starter: true
+Position: Defender
+Name: Nelson Semedo
+Country: Portugal
+Number: 2
+Starter: false
+Position: Midfielder
+Name: Sergio Busquets
+Country: Spain
+Number: 5
+Starter: true
+Position: Midfielder
+Name: Arthur Melo
+Country: Brazil
+Number: 8
+Starter: false
+Position: Midfielder
+Name: Ivan Rakitic
+Country: Croatia
+Number: 4
+Starter: true
+Position: Midfielder
+Name: Arturo Vidal
+Country: Chile
+Number: 22
+Starter: false
+Position: Midfielder
+Name: Philippe Coutinho
+Country: Brazil
+Number: 7
+Starter: true
+Position: Attacker
+Name: Ousmane Dembélé
+Country: France
+Number: 11
+Starter: false
+Position: Attacker
+Name: Lionel Messi
+Country: Argentina
+Number: 10
+Starter: true
+Position: Attacker
+Name: Malcolm Silva
+Country: Brazil
+Number: 14
+Starter: true
+Position: Attacker
+Name: Luis Suárez
+Country: Uruguay
+Number: 9
+Starter: true
+Position: Attacker
+Name: Kevin-Prince Boateng
+Country: Ghana
+Number: 19
+Starter: false

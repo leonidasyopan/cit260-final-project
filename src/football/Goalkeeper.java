@@ -46,7 +46,7 @@ public class Goalkeeper extends Player {
      */
     @Override
     public String toString() {
-    	return String.format("Goalkeeper { %s }", super.toString());     
+    	return String.format("GOALKEEPER:   %s", super.toString());     
     }
 
 }

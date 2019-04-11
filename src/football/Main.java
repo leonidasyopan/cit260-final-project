@@ -12,8 +12,8 @@ public class Main {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {		
-
+	public static void main(String[] args) {
+					
 		// Creates the Main Menu for the program
 		Menu menu = new MainMenu();
 		
@@ -21,7 +21,7 @@ public class Main {
 		menu.display();
 		
 		// This message would only be executed if the user exited the program
-		// As the program is settup right now, we're not giving a "quit" option in the Menu.
+		
 		System.out.println("Good-bye!");
 
 	}

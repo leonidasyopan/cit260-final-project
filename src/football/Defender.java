@@ -45,24 +45,7 @@ public class Defender extends Player {
      */
     @Override
     public String toString() {
-        return String.format("Denfender { %s }", super.toString());        
+        return String.format("DEFENDER:     %s", super.toString());        
     }
-
-	@Override
-	protected Player get(int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected boolean getCurrentStatus() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	protected void setCurrentStatus(boolean b) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
