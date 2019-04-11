@@ -1,8 +1,10 @@
 package football.menu;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import football.Player;
+import football.Team;
 import football.TeamDatabase;
 
 /**
@@ -129,6 +131,19 @@ public abstract class Menu {
             System.out.printf("We don't currently have any %ss.%n", playerClass.getSimpleName());
         }
     }
+    
+    
+    /**
+     * This is the method to prompt the user for the jersey number
+     * in order to change the Status of a Specific player.
+     */
+	public void promptChage() {
+		String userPlayer = prompt("Type the Number of the Player you want to change the status: ");
+		ArrayList<Player> squad = TeamDatabase.getSquad();
+		String resultChange = Team.changeStatus(Integer.parseInt(userPlayer), squad);
+		System.out.println(resultChange);
+	}
+
 	
 	/**
 	 * Prompt the user for input and return whatever they type. The user must hit Enter before the value is returned.

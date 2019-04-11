@@ -55,7 +55,7 @@ public class AttackersMenu extends Menu {
         	printPlayers(Attacker.class);
             break;
         case '2':
-            System.out.println("");
+        	promptChage();
             break;
             
         case 'R':

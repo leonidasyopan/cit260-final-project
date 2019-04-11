@@ -68,11 +68,11 @@ public class Team {
 				if (currentStatus == true) {					
 					// Change status to False (reserve)
 					player.setStarter(false);
-					resultChange = "Player " + player.getName() + " is now a Reserve";
+					resultChange = player.getName() + " is now a Reserve";
 				} else {
 					// Change status to True (starter)
 					player.setStarter(true);
-					resultChange = "Player " + player.getName() + " is now a Starter";
+					resultChange = player.getName() + " is now a Starter";
 				}
 			}
 		}

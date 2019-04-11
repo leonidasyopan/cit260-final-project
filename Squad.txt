@@ -52,7 +52,7 @@ Position: Midfielder
 Name: Arthur Melo
 Country: Brazil
 Number: 8
-Starter: true
+Starter: false
 Position: Midfielder
 Name: Ivan Rakitic
 Country: Croatia
@@ -67,12 +67,12 @@ Position: Midfielder
 Name: Philippe Coutinho
 Country: Brazil
 Number: 7
-Starter: false
+Starter: true
 Position: Attacker
 Name: Ousmane Dembélé
 Country: France
 Number: 11
-Starter: true
+Starter: false
 Position: Attacker
 Name: Lionel Messi
 Country: Argentina
@@ -82,7 +82,7 @@ Position: Attacker
 Name: Malcolm Silva
 Country: Brazil
 Number: 14
-Starter: false
+Starter: true
 Position: Attacker
 Name: Luis Suárez
 Country: Uruguay

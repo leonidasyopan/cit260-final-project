@@ -1,11 +1,6 @@
 package football.menu;
 
-import java.util.ArrayList;
-
 import football.Goalkeeper;
-import football.Player;
-import football.Team;
-import football.TeamDatabase;
 
 public class GoalkeepersMenu extends Menu {	
 	
@@ -74,13 +69,6 @@ public class GoalkeepersMenu extends Menu {
 		return true;
 	}
 	
-	public void promptChage() {
-		String userPlayer = prompt("Type the Number of the Player you want to change the status: ");
-		ArrayList<Player> squad = TeamDatabase.getSquad();
-		String resultChange = Team.changeStatus(Integer.parseInt(userPlayer), squad);
-		System.out.println(resultChange);
-	}
-
 }
 
 
