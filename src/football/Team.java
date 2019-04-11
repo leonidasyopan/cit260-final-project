@@ -1,28 +1,31 @@
 package football;
 
+import java.util.ArrayList;
+
 /**
- * This class will manage the data for the team. From here we are going
- * to organize everything in lists.
- * Here we are going to read and write to a file.
+ * This class will manage the data for the team. From here we are going to
+ * organize everything in lists. Here we are going to read and write to a file.
+ * 
  * @authors Mahonrry and Leonidas
  *
  */
 public class Team {
-	
-	//declare all variables
+
+	// declare all variables
 	private String name;
 	private String city;
 	private String country;
-	
+
 	/**
 	 * Default Constructor
 	 */
 	public Team() {
 		// empty constructor
 	}
-	
+
 	/**
 	 * Constructor
+	 * 
 	 * @param name
 	 * @param city
 	 * @param country
@@ -31,62 +34,46 @@ public class Team {
 		this.name = name;
 		this.city = city;
 		this.country = country;
-	}		
-	
+	}
+
 	/**
-	 * This is a method for changing the status of a player 
-	 * from Starter to Reserve (and vice versa)
-	 * The method uses the jersey number as the ID of the player. 
+	 * This is a method for changing the status of a player from Starter to Reserve
+	 * (and vice versa) The method uses the jersey number as the ID of the player.
 	 * @param jerseyNumber
+	 * @param squad
 	 */
-	
-//	 public void changeStatus(int jerseyNumber) {
-//	 
-//		
-//		// Generates a local variable boolean for handling the change
-//		boolean currentStatus = true;
-//		
-//		// Stores the number of the jersey of the player that must be changed
-//		int currentPlayer = jerseyNumber;		
-//		
-//		// reads the current status of the player based on it's jersey number			
-//		// Loop through our Players list to check whether there is any player
-//		// with the jersey number of the "currentPlayer"
-//		for(int i=0; i<99; i++) {
-//			
-//			Player player2 = null;
-//			Player player = player2.get(i);
-//			if ( player.getNumber() == currentPlayer) {
-//				player.setCurrentStatus(! player.getCurrentStatus());
-//			}
-//			
-//			
-//			if( i == currentPlayer ) {
-//				
-//				
-//				currentStatus = Player.isStarter();
-//			}
-//		}
-//		
-//		// "if statement" that will switch the current status
-//		// if the player is a starter he will become a reserve
-//		// if the player is a reserve he will become a starter		
-//		if (currentStatus = true) {
-//			// Select the player by jersey
-//			
-//			
-//			// Change status to False (reserve)
-//			Player.setStarter(false);
-//		} else {
-//			// Select the player by jersey
-//			
-//			
-//			// Change status to True (starter)
-//			Player.setStarter(true);
-//		}		
-//		
-//	}	
-	
+	public void changeStatus(int jerseyNumber, ArrayList<Player> squad) {
+
+		// Bring the Squad to scope
+//		ArrayList<Player> squad = TeamDatabase.getSquad();		
+
+		// Stores the number of the jersey of the player that must be changed
+		int currentPlayer = jerseyNumber;
+
+		// reads the current status of the player based on it's jersey number
+		// Loop through our Players list to check whether there is any player
+		// with the jersey number of the "currentPlayer"
+		for (Player player : squad) {			
+			if (player.getNumber() == currentPlayer) {
+				
+				// Generates a local variable boolean for handling the change
+				boolean currentStatus = player.isStarter();
+				
+				// "if statement" that will switch the current status
+				// if the player is a starter he will become a reserve
+				// if the player is a reserve he will become a starter
+				if (currentStatus = true) {					
+					// Change status to False (reserve)
+					player.setStarter(false);
+				} else {
+					// Change status to True (starter)
+					player.setStarter(true);
+				}
+			}
+		}
+		
+	}
+
 	/**
 	 * @return the Team's name
 	 */
@@ -123,10 +110,10 @@ public class Team {
 	}
 
 	/**
-	 * @param country to set the country 
+	 * @param country to set the country
 	 */
 	public void setCountry(String country) {
 		this.country = country;
-	}	
-	
+	}
+
 }
