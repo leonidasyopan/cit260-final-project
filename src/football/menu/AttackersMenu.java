@@ -2,6 +2,13 @@ package football.menu;
 
 import football.Attacker;
 
+/**
+ * This is the Menu responsible for handling the options
+ * for the Attacker Players.
+ * It extends the Menu Class
+ * @author Mahonrry and Leonidas 
+ *
+ */
 public class AttackersMenu extends Menu {	
 	
 	/**

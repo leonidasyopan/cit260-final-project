@@ -8,8 +8,10 @@ import football.Team;
 import football.TeamDatabase;
 
 /**
- * Our menu base class to provide all the things for writing menus
- * @author leonidas and mahonrry
+ * This is the base Menu class.
+ * It's responsible for the most important methods related 
+ * to all the menu options.
+ * @author Mahonrry and Leonidas 
  *
  */
 public abstract class Menu {

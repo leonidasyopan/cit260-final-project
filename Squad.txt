@@ -2,12 +2,12 @@ Position: Goalkeeper
 Name: Marc-André Ter Stegen
 Country: Germany
 Number: 1
-Starter: true
+Starter: false
 Position: Goalkeeper
 Name: Jasper Cillessen
 Country: Netherlands
 Number: 13
-Starter: false
+Starter: true
 Position: Defender
 Name: Samuel Umtiti
 Country: Netherlands

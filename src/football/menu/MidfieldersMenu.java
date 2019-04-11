@@ -2,6 +2,13 @@ package football.menu;
 
 import football.Midfielder;
 
+/**
+ * This is the Menu responsible for handling the options
+ * for the Midfielder Players.
+ * It extends the Menu Class
+ * @author Mahonrry and Leonidas 
+ *
+ */
 public class MidfieldersMenu extends Menu {	
 	
 	/**

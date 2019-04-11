@@ -9,6 +9,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
+/**
+ * This is the Database class. It's responsible for handling 
+ * everything related to receiving, storing and printing data
+ * to or from an external TXT file. 
+ * @author Mahonrry and Leonidas 
+ *
+ */
 public class TeamDatabase {
 	
 	// Creates a constant for the name of our file

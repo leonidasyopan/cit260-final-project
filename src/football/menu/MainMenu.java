@@ -3,6 +3,14 @@ package football.menu;
 import football.TeamDatabase;
 import football.Player;
 
+/**
+ * This is the Main Menu
+ * It's responsible for the most important options of the program.
+ * Including listing all the players and printing to an external file.
+ * It extends the Menu Class
+ * @author Mahonrry and Leonidas 
+ *
+ */
 public class MainMenu extends Menu {	
 	
 	/**

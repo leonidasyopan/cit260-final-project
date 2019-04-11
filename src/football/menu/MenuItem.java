@@ -2,7 +2,7 @@ package football.menu;
 
 /**
  * Menu class for the use of Menu objects
- * @author leoni
+ * @author Mahonrry and Leonidas 
  *
  */
 public class MenuItem {
