@@ -62,7 +62,7 @@ public class GoalkeepersMenu extends Menu {
         case '2':
         	String userPlayer = prompt("Type the Number of the Player you want to change the status: ");
     		ArrayList<Player> squad = TeamDatabase.getSquad();
-        	changeStatus(Integer.parseInt(userPlayer), squad);
+        	Team.changeStatus(Integer.parseInt(userPlayer), squad);
             break;
             
         case 'R':

@@ -42,7 +42,7 @@ public class Team {
 	 * @param jerseyNumber
 	 * @param squad
 	 */
-	public void changeStatus(int jerseyNumber, ArrayList<Player> squad) {
+	public static void changeStatus(int jerseyNumber, ArrayList<Player> squad) {
 
 		// Bring the Squad to scope
 //		ArrayList<Player> squad = TeamDatabase.getSquad();		
