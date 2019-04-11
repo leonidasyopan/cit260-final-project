@@ -54,7 +54,8 @@ public class Player {
 	/**
 	 * @param starter the starter to set
 	 */
-	public void setStarter(boolean starter) {
+	public void setStarter(boolean starter) {	
+		this.starter = starter;
 		}
 	
 	/**

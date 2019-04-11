@@ -65,14 +65,14 @@ public class Team {
 				// "if statement" that will switch the current status
 				// if the player is a starter he will become a reserve
 				// if the player is a reserve he will become a starter
-				if (currentStatus = true) {					
+				if (currentStatus == true) {					
 					// Change status to False (reserve)
 					player.setStarter(false);
-					resultChange = "Player player.getNumber() is now a Reserve";
+					resultChange = "Player " + player.getName() + " is now a Reserve";
 				} else {
 					// Change status to True (starter)
 					player.setStarter(true);
-					resultChange = "Player player.getNumber() is now a Starter";
+					resultChange = "Player " + player.getName() + " is now a Starter";
 				}
 			}
 		}
